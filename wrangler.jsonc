@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "leverframe-site",
+  "compatibility_date": "2026-11-18",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "public"
+  },
+  "routes": [
+    {
+      "pattern": "leverframe.dev",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.leverframe.dev",
+      "custom_domain": true
+    }
+  ]
+}

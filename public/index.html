@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leverframe — agent infrastructure</title>
+  <meta name="description" content="Bridge, guardrails, verifiable consensus. Agent infrastructure in daily production use on a multi-agent fleet." />
+  <link rel="icon" type="image/svg+xml" href="/assets/bite-mark.svg" />
+  <link rel="canonical" href="https://leverframe.dev/" />
+  <meta property="og:title" content="Leverframe — agent infrastructure" />
+  <meta property="og:description" content="Bridge, guardrails, verifiable consensus. In daily production use on a multi-agent fleet." />
+  <meta property="og:url" content="https://leverframe.dev/" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/assets/bite-mark.svg" alt="" width="22" height="22" />
+      <span>LEVERFRAME</span>
+    </a>
+    <nav class="topnav">
+      <a href="/#products">products</a>
+      <a href="/#interlock">interlock</a>
+      <a href="https://docs.leverframe.dev">docs ↗</a>
+      <a href="https://github.com/leverframe">github ↗</a>
+    </nav>
+  </header>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-group">
+        <span>BRIDGE OPENCLAW + HERMES INTO ANY MCP CLIENT <i>◆</i></span>
+        <span>DETERMINISTIC GUARDRAILS FOR CODING AGENTS <i>◆</i></span>
+        <span>K-OF-N SIGNED CONSENSUS RECEIPTS <i>◆</i></span>
+        <span>PULL = INVOKE AN AGENT <i>◆</i></span>
+        <span>IN DAILY PRODUCTION USE <i>◆</i></span>
+      </span>
+      <span class="ticker-group">
+        <span>BRIDGE OPENCLAW + HERMES INTO ANY MCP CLIENT <i>◆</i></span>
+        <span>DETERMINISTIC GUARDRAILS FOR CODING AGENTS <i>◆</i></span>
+        <span>K-OF-N SIGNED CONSENSUS RECEIPTS <i>◆</i></span>
+        <span>PULL = INVOKE AN AGENT <i>◆</i></span>
+        <span>IN DAILY PRODUCTION USE <i>◆</i></span>
+      </span>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="plate hero">
+      <p class="plate-label">PLATE 01 / SIGNAL-BOX</p>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>LEVER<span class="amber">FRAME</span></h1>
+          <p class="tagline">
+            Agent infrastructure. Your fleet, on one panel —
+            <strong>bridge</strong> the runtimes, <strong>supervise</strong> the actions,
+            <strong>agree</strong> on the record.
+          </p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://docs.leverframe.dev">READ THE DOCS</a>
+            <a class="btn btn-ghost" href="https://github.com/leverframe">GITHUB ORG ↗</a>
+          </div>
+        </div>
+        <div class="hero-lever" aria-hidden="true">
+          <svg viewBox="0 0 150 150" width="260" height="260">
+            <!-- frame plate -->
+            <rect x="0.5" y="0.5" width="149" height="149" fill="none" stroke="#1F1F1F"/>
+            <path d="M0 0 h14 M0 0 v14" stroke="#878D93"/>
+            <path d="M150 150 h-14 M150 150 v-14" stroke="#878D93"/>
+            <!-- registration plate -->
+            <rect x="35" y="30" width="80" height="90" rx="4" fill="#141516" stroke="#1F1F1F"/>
+            <!-- lever slot -->
+            <g transform="translate(75,75) rotate(0)">
+              <rect x="-5" y="-38" width="10" height="76" rx="5" fill="#111213" stroke="#1F1F1F"/>
+            </g>
+            <!-- lever + ball: throws -33deg <-> 33deg over the frame -->
+            <g class="lever-arm">
+              <g transform="translate(75,113) rotate(-33)">
+                <rect x="-5" y="-83" width="10" height="83" rx="2" fill="#C2C7CC"/>
+                <circle cx="0" cy="-83" r="9" fill="#FFB000"/>
+              </g>
+            </g>
+          </svg>
+          <p class="lever-caption">pull = invoke an agent · 2.2s loop</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIF PLATE -->
+    <section class="gif-plate">
+      <img src="/assets/leverframe-header.gif" alt="The Leverframe lever throw" width="1280" height="320" loading="lazy" />
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-row">
+      <div class="stat"><span class="stat-value">3</span><span class="stat-label">PRODUCTS</span></div>
+      <div class="stat"><span class="stat-value">2</span><span class="stat-label">RUNTIMES BRIDGED</span></div>
+      <div class="stat"><span class="stat-value">6</span><span class="stat-label">MCP TOOLS</span></div>
+      <div class="stat"><span class="stat-value">5</span><span class="stat-label">GUARDRAILS</span></div>
+      <div class="stat"><span class="stat-value">K-OF-N</span><span class="stat-label">SIGNED RECEIPTS</span></div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="section-head">
+        <span class="rule"></span>
+        <h2>PLATE 02 · FRAME / PRODUCTS</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="tile-grid">
+        <a class="tile" href="https://github.com/leverframe/fleet-bridge">
+          <div class="tile-top">
+            <span class="tile-name">fleet-bridge</span>
+            <span class="tile-tag">MCP · STDIO</span>
+          </div>
+          <p class="tile-desc">One tool surface across OpenClaw gateway agents and Hermes agents. Any MCP client — Zed, Claude Code — sees a single roster and pulls any agent by name.</p>
+          <ul class="tile-meta"><li>6 tools</li><li>sessions server-side</li><li>tokens stripped</li></ul>
+          <div class="tile-foot">
+            <span class="lever-slot"><span class="slot-ball"></span></span>
+            <span class="tile-license">MIT</span>
+          </div>
+          <span class="tile-cta">OPEN DOCS →</span>
+        </a>
+        <a class="tile" href="https://github.com/leverframe/wranglebot">
+          <div class="tile-top">
+            <span class="tile-name">wranglebot</span>
+            <span class="tile-tag">GUARD · CLI</span>
+          </div>
+          <p class="tile-desc">Sits between your coding agent and its tools. Dangerous constructs gated before they execute, runaway loops killed by deterministic signals, every decision in a .curt record.</p>
+          <ul class="tile-meta"><li>ast-gate</li><li>loop-breaker</li><li>scope-guard</li></ul>
+          <div class="tile-foot">
+            <span class="lever-slot"><span class="slot-ball"></span></span>
+            <span class="tile-license">BUSL-1.1</span>
+          </div>
+          <span class="tile-cta">OPEN DOCS →</span>
+        </a>
+        <a class="tile" href="https://github.com/leverframe/tractum">
+          <div class="tile-top">
+            <span class="tile-name">tractum</span>
+            <span class="tile-tag">CONSENSUS · PY</span>
+          </div>
+          <p class="tile-desc">Three agents debate, each signs its own stance, and the result ships as a k-of-n signed receipt anyone can verify — forever.</p>
+          <ul class="tile-meta"><li>Ed25519 + BIP-340</li><li>NIP-78 on Nostr</li><li>verify forever</li></ul>
+          <div class="tile-foot">
+            <span class="lever-slot"><span class="slot-ball"></span></span>
+            <span class="tile-license">BUSL-1.1</span>
+          </div>
+          <span class="tile-cta">OPEN DOCS →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERLOCK / THESIS -->
+    <section id="interlock">
+      <div class="section-head">
+        <span class="rule"></span>
+        <h2>PLATE 03 · THE INTERLOCK</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="tile-grid three">
+        <div class="tile static">
+          <span class="principle-no">01</span>
+          <h3>BRIDGE</h3>
+          <p class="tile-desc">Runtimes don't talk. OpenClaw gateways speak HTTP chat, Hermes speaks ssh. fleet-bridge makes them one roster behind one tool surface — cross-runtime by construction.</p>
+        </div>
+        <div class="tile static">
+          <span class="principle-no">02</span>
+          <h3>SUPERVISE</h3>
+          <p class="tile-desc">Supervisors supervise. wranglebot makes thrashing expensive: dangerous constructs denied before execution, runaway loops killed on deterministic counts, everything recorded.</p>
+        </div>
+        <div class="tile static">
+          <span class="principle-no">03</span>
+          <h3>AGREE</h3>
+          <p class="tile-desc">Frameworks coordinate. Tractum agrees: per-agent signed stances, quorum-verifiable receipts you can hand to an auditor, a regulator, or a future teammate.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section>
+      <div class="section-head">
+        <span class="rule"></span>
+        <h2>PLATE 04 · HOW IT FITS</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="pipeline">
+<pre>  YOUR AGENT (Claude Code / Codex / Zed / any MCP client)
+        │
+        ▼
+  ┌─ wranglebot ──────────────────────────────────┐
+  │  ast-gate → loop-breaker → scope-guard        │──▶ deny / warn / .curt record
+  └───────────────────────────────────────────────┘
+        │ allowed
+        ▼
+  ┌─ fleet-bridge ────────────────────────────────┐
+  │  one roster, two runtimes:                    │
+  │    OpenClaw agents  (HTTP chat/completions)   │──▶ invoke by name, sessions server-side
+  │    Hermes agents    (ssh -z)                  │
+  └───────────────────────────────────────────────┘
+        │ agents disagree?
+        ▼
+  ┌─ tractum ─────────────────────────────────────┐
+  │  debate → each stance signed → k-of-n receipt │──▶ verify forever, publish NIP-78
+  └───────────────────────────────────────────────┘</pre>
+      </div>
+    </section>
+
+    <!-- PRODUCTION STRIP -->
+    <section class="prod-strip">
+      <span>IN DAILY PRODUCTION USE ON A MULTI-AGENT FLEET</span>
+      <i>◆</i>
+      <span>DOCS BUILT FROM SOURCE — EVERY PAGE CITES ITS FILES</span>
+      <i>◆</i>
+      <span>LICENSES PER PRODUCT — MIT / BUSL-1.1</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/bite-mark.svg" alt="Leverframe bite mark" width="26" height="26" />
+        <div>
+          <p class="footer-name">LEVERFRAME</p>
+          <p class="footer-tag">agent infrastructure</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">PRODUCTS</p>
+        <a href="https://github.com/leverframe/fleet-bridge">fleet-bridge</a>
+        <a href="https://github.com/leverframe/wranglebot">wranglebot</a>
+        <a href="https://github.com/leverframe/tractum">tractum</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">DOCS</p>
+        <a href="https://docs.leverframe.dev">docs.leverframe.dev</a>
+        <a href="https://docs.leverframe.dev/fleet-bridge/">fleet-bridge docs</a>
+        <a href="https://docs.leverframe.dev/wranglebot/">wranglebot docs</a>
+        <a href="https://docs.leverframe.dev/tractum/">tractum docs</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">ORG</p>
+        <a href="https://github.com/leverframe">github.com/leverframe</a>
+        <a href="/#interlock">the interlock</a>
+      </div>
+    </div>
+    <p class="footer-line">© 2026 Leverframe · leverframe.dev · licenses per product (MIT / BUSL-1.1)</p>
+  </footer>
+</body>
+</html>

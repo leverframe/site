@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- LEVERFRAME BITE — primary: amber plate, slot cut through, round pivot end -->
+  <defs>
+    <mask id="slot">
+      <rect width="120" height="120" fill="#fff"/>
+      <g transform="translate(52,60) rotate(30)">
+        <path d="M -10 -80 L -10 0 A 10 10 0 0 0 10 0 L 10 -80 Z" fill="#000"/>
+      </g>
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="120" height="120" rx="10" fill="#FFB000" mask="url(#slot)"/>
+</svg>
