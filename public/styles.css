@@ -6,25 +6,28 @@
    ============================================================ */
 
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+  src: url("/assets/fonts/jetbrains-mono-latin-400-normal.woff2")
+    format("woff2");
 }
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono-latin-500-normal.woff2') format('woff2');
+  src: url("/assets/fonts/jetbrains-mono-latin-500-normal.woff2")
+    format("woff2");
 }
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono-latin-600-normal.woff2') format('woff2');
+  src: url("/assets/fonts/jetbrains-mono-latin-600-normal.woff2")
+    format("woff2");
 }
 
 :root {
@@ -53,7 +56,7 @@ html {
 body {
   background: var(--ground);
   color: var(--body);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 15px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -64,17 +67,28 @@ body {
   color: #111213;
 }
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--panel); }
-::-webkit-scrollbar-thumb { background: var(--border); border: 2px solid var(--panel); }
-::-webkit-scrollbar-thumb:hover { background: var(--steel-dim); }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--panel);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border: 2px solid var(--panel);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--steel-dim);
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--ink);
   font-weight: 600;
 }
@@ -161,8 +175,12 @@ h1, h2, h3 {
 }
 
 @keyframes ticker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* ---- layout ---- */
@@ -188,7 +206,7 @@ section {
 
 .plate::before,
 .plate::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 14px;
   height: 14px;
@@ -261,7 +279,10 @@ section {
   letter-spacing: 0.14em;
   padding: 0.7rem 1.25rem;
   border: 1px solid transparent;
-  transition: background 120ms linear, color 120ms linear, border-color 120ms linear;
+  transition:
+    background 120ms linear,
+    color 120ms linear,
+    border-color 120ms linear;
 }
 
 .btn-primary {
@@ -297,16 +318,32 @@ section {
 }
 
 @keyframes leverThrow {
-  0%   { transform: rotate(-33deg); }
-  45%  { transform: rotate(38deg); }
-  55%  { transform: rotate(38deg); }
-  100% { transform: rotate(-33deg); }
+  0% {
+    transform: rotate(-33deg);
+  }
+  45% {
+    transform: rotate(38deg);
+  }
+  55% {
+    transform: rotate(38deg);
+  }
+  100% {
+    transform: rotate(-33deg);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lever-arm { animation: none; transform: rotate(38deg); }
-  .ticker-track { animation: none; }
-  .slot-ball { animation: none !important; transform: translateX(54px); }
+  .lever-arm {
+    animation: none;
+    transform: rotate(38deg);
+  }
+  .ticker-track {
+    animation: none;
+  }
+  .slot-ball {
+    animation: none !important;
+    transform: translateX(54px);
+  }
 }
 
 .lever-caption {
@@ -410,8 +447,14 @@ section {
 }
 
 @keyframes tileIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .tile-top {
@@ -486,10 +529,18 @@ section {
 }
 
 @keyframes slotThrow {
-  0%   { transform: translateX(0); }
-  45%  { transform: translateX(64px); }
-  55%  { transform: translateX(64px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(64px);
+  }
+  55% {
+    transform: translateX(64px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .tile-license {
@@ -647,9 +698,20 @@ section {
 }
 
 @media (max-width: 640px) {
-  main { padding: 1rem 1rem 0; }
-  .plate { padding: 1.5rem 1.25rem; }
-  .topnav { gap: 0.9rem; }
-  .topnav a:first-child { display: none; }
-  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  main {
+    padding: 1rem 1rem 0;
+  }
+  .plate {
+    padding: 1.5rem 1.25rem;
+  }
+  .topnav {
+    gap: 0.9rem;
+  }
+  .topnav a:first-child {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
